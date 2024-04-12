@@ -178,7 +178,8 @@ background: 'linear-gradient(270deg, #121212 100%, #2176B9 2%)'
 
 
 <Box sx={{
-      my: "20%"
+      mt: "80%",
+      mb: "20%"
     }}>
 <ViewInfo/>
     </Box>

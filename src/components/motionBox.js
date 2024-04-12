@@ -14,6 +14,7 @@ const AnimatedBox = ({ imageSrc, altText = "Image" }) => (
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+      width:"100%"
     }}
     whileHover={{
       scale: 1.1, 

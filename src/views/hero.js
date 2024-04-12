@@ -120,7 +120,7 @@ const HeroView = () => {
     <Box display={"flex"} justifyContent={"center"} width={"100%"}>
       <Grid container spacing={2} justifyContent="center">
         {logos.map((logo, index) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={index} display="flex" justifyContent="center">
+          <Grid item xs={12} sm={6} md={4} lg={3} width={"100%"} key={index} display="flex" justifyContent="center">
             <AnimatedBox imageSrc={logo} />
           </Grid>
         ))}

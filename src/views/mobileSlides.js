@@ -27,6 +27,8 @@ const MobileSlides = () => {
       animate={controls}
       transition={{  duration: 1 }}
       style={{
+        zIndex:1,
+
         position: 'absolute',
         width: '100%',
         height: '100%',
@@ -38,19 +40,23 @@ const MobileSlides = () => {
     ></motion.div>
 <Box
         sx={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
+          // position: 'absolute',
+          // top: 0,
+          // left: 0,
           width: '100%',
           height: '100%',
           paddingInline: "8%",
+
         }}
-      >        <Box sx={{
+      >    
+          <Box sx={{
           width: '60%',
           mt: "100px",
           display: "flex",
           flexDirection: "column",
           gap: 2,
+        zIndex:5
+
         }}>
           <Typography variant='h1' className='heading1' sx={{ fontSize: "56px", fontWeight: 600 }}>
             Know your <span style={{ color: "#2176B9" }}>Trading Objectives</span>

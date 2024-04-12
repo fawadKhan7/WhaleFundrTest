@@ -51,7 +51,7 @@ const ViewInfo = () => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      p: isMdUp ? 8 : 2,
+      p: isMdUp ? 8 : 4,
       position:"relative"
     }}>
       <Grid container spacing={2} sx={{
@@ -89,7 +89,7 @@ const ViewInfo = () => {
 
         <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', zIndex: 2, 
         }}>
-          <Typography variant="h4" style={{ fontWeight: 800, marginTop: '-25%', position: 'absolute', zIndex: 1 }}>
+          <Typography variant="h4" style={{ fontWeight: 800, marginTop: isLargeScreen?'-25%':"-35%", position: 'absolute', zIndex: 1 }}>
             Join the team of our <span style={{color: '#2176B9'}}>successful traders</span> 
           </Typography>
           <Typography variant="body1" sx={{ mt: 2 }}>
@@ -208,7 +208,7 @@ const ViewInfo = () => {
       </Paper>
     </Grid>
     <Grid item xs={12} md={6}>
-      <Typography variant="h4" style={{ fontWeight: 800, marginTop: '-10%', position: 'absolute', zIndex: 1 }}>
+      <Typography variant="h4" style={{ fontWeight: 800, marginTop: isLargeScreen?'-10%':'-20%', position: 'absolute', zIndex: 1 }}>
         The most popular retail trading platforms
       </Typography>
       <Box>
