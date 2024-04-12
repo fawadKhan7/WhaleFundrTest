@@ -106,20 +106,64 @@ const HeroContact = () => {
     </Box>
   
    
-      <Grid container spacing={2} display={"flex"} justifyContent="center" alignItems="center" gap={2}>
-          <Grid item xs={12} sm={5} >
-            <Box padding={4} bgcolor={"#2B2323"} display="flex" height={"auto"} width={"90%"} justifyContent="center" alignItems="center" flexDirection={"column"} gap={2} borderRadius={6}>
-<EmailOutlinedIcon style={{fontSize:70,color:"#2176B9"}}/>
-<Typography  variant="h5">Noe_Rempel30@yahoo.com</Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={5} >
-          <Box padding={4} bgcolor={"#2B2323"} display="flex" height={"auto"} width={"90%"} justifyContent="center" alignItems="center" flexDirection={"column"} gap={2} borderRadius={6}>
-<PhoneOutlinedIcon style={{fontSize:70,color:"#2176B9"}}/>
-<Typography  variant="h5">275-437-1694</Typography>
-            </Box>
-          </Grid>
-      </Grid>
+    <Grid container spacing={2} display="flex" justifyContent="center" alignItems="center" gap={2}>
+    <Grid item xs={12} md={5}>
+        <Box 
+            padding={4} 
+            bgcolor="#2B2323" 
+            display="flex" 
+            height="auto" 
+            width="90%" 
+            justifyContent="center" 
+            alignItems="center" 
+            flexDirection="column" 
+            gap={2} 
+            borderRadius={6}
+            style={{ overflow: 'hidden' }}  
+        >
+            <EmailOutlinedIcon style={{ fontSize: 70, color: "#2176B9" }} />
+            <Typography 
+                variant="h5" 
+                style={{
+                    whiteSpace: 'nowrap',   
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    maxWidth: '100%' 
+                }}
+            >
+                Noe_Rempel30@yahoo.com
+            </Typography>
+        </Box>
+    </Grid>
+    <Grid item xs={12} md={5}>
+        <Box 
+            padding={4} 
+            bgcolor="#2B2323" 
+            display="flex" 
+            height="auto" 
+            width="90%" 
+            justifyContent="center" 
+            alignItems="center" 
+            flexDirection="column" 
+            gap={2} 
+            borderRadius={6}
+            style={{ overflow: 'hidden' }}
+        >
+            <PhoneOutlinedIcon style={{ fontSize: 70, color: "#2176B9" }} />
+            <Typography 
+                variant="h5" 
+                style={{
+                    whiteSpace: 'nowrap',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    maxWidth: '100%'
+                }}
+            >
+                275-437-1694
+            </Typography>
+        </Box>
+    </Grid>
+</Grid>
     </Box>
 
   </>

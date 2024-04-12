@@ -30,7 +30,7 @@ const BenifitAbout = () => {
 
   return (
     <Grid container spacing={2} display={"flex"} justifyContent={"center"} alignItems={"center"}  position={"relative"}>
-    <Grid item xs={12} sm={6} md={4} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} gap={2}>
+    <Grid item xs={12}  md={4} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} gap={2}>
       <Box sx={{background: "#2B2323"}} width={"80%"} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={2} padding={3} borderRadius={3}>
         <CalendarMonthIcon style={{fontSize:50,color:"#2176B9"}}/>
         <Typography variant="h5">Benifit 1</Typography>
@@ -42,18 +42,18 @@ const BenifitAbout = () => {
       </Box>
     </Grid>
 
-    <Grid item xs={12} sm={6} md={4} >
+    <Grid item xs={12} md={4} style={{ display: 'flex', justifyContent: 'center' }}>
     <motion.div
         ref={ref}
         initial={{ x: '-50%' }}
         animate={controls}
         transition={{ duration: 1 }}
-      >
-                    <Image src={Chair} alt="Chair" width={350} />
-            </motion.div>
-    </Grid>
+        style={{ width: '100%', maxWidth: 350 }} >
+        <Image src={Chair} alt="Chair" width={350} />
+    </motion.div>
+</Grid>
   
-    <Grid item xs={12} sm={6} md={4} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} gap={2}>
+    <Grid item xs={12}  md={4} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} gap={2}>
       <Box sx={{background: "#2B2323"}} width={"80%"} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={2} padding={3} borderRadius={3}>
         <InsertDriveFileOutlinedIcon style={{fontSize:50,color:"#2176B9"}}/>
         <Typography variant="h5">Benifit 3</Typography>
@@ -64,7 +64,7 @@ const BenifitAbout = () => {
         <Typography variant="h5">Benifit 4</Typography>
       </Box>
     </Grid>
-    <Grid item xs={12} position={"absolute"} marginTop={isLargeScreen?95:200} width={"100%"}>
+    <Grid item xs={12} position={"absolute"} marginTop={isLargeScreen?95:198} width={"100%"}>
       <Box sx={{background: "rgba(47, 47, 53, 1)"}} mx={"auto"} width={"80%"} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} gap={2} padding={3} borderRadius={3}>
         <Image src={Logo} width={300} />
         <Typography variant="h5" style={{fontSize:40,fontWeight:800}}>JOIN <BlueText>OUR TEAM !</BlueText></Typography>

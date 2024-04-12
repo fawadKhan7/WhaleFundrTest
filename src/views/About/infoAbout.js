@@ -171,14 +171,14 @@ const AboutInfo = () => {
       </Paper>
     </Grid>
     <Grid item xs={12} md={6}>
-      <Typography variant="h4" style={{ fontWeight: 800, marginTop: '-6%', position: 'absolute', zIndex: 1 }}>
+      <Typography variant="h4" style={{ fontWeight: 800, marginTop: isLargeScreen?'-6%':"-10%", position: 'absolute', zIndex: 1 }}>
      <BlueText>WhaleFundr</BlueText> Playground 
             </Typography>
       <Box>
         <Typography variant="label" style={{ fontSize: "15px" }} paragraph>
         There are many handy gadgets and features our offices have to offer. We have phone booths where our employees can handle business and personal calls or meeting rooms where you can draw your ideas on the glass walls. In each department, there are fridges full of various drinks, not to mention all the snacks available in our kitchen. We have our own recording studio where all the digital magic happens and finally our poker room, where we spend most Friday evenings.        
         </Typography>
-        <CustomButton variant="contained" sx={{ borderRadius: '50px', px: 4, py: 1 }} label={<span>Check Location <KeyboardArrowRightIcon/></span>} />
+        <CustomButton variant="contained" sx={{ borderRadius: '50px', px: 4, py: 1,mb:1 }} label={<span>Check Location <KeyboardArrowRightIcon/></span>} />
 
       </Box>
     </Grid>
