@@ -4,9 +4,14 @@ import Typography from '@mui/material/Typography';
 import CustomButton from '@/components/atoms/button';
 import BlueText from '@/components/atoms/blueText';
 import SliderHero from '../SliderHero';
+import { motion } from 'framer-motion';
 const HeroAbout = () => {
   return (
-    <>  
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.75 }}
+  >
       <Box
     sx={{
       backgroundImage: `url(./ContactBg.png)`, 
@@ -50,7 +55,7 @@ const HeroAbout = () => {
     >
 <SliderHero/>
     </Box>
-  </>
+  </motion.div>
   )
 }
 
